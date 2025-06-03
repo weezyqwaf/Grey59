@@ -1,0 +1,131 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+  
+    
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .nav-left a, .nav-right i {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .nav-left a:hover, .nav-right i:hover {
+      color: #ccc;
+    }
+
+    header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-align: center;
+}
+
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      color: #000;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #eee;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+   .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.main .top-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 600px;
+}
+
+
+    .main h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .main p {
+      font-size: 1rem;
+    }
+
+    .footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Inter', Helvetica, sans-serif;
+}
+
+.footer h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
